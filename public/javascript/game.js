@@ -1,28 +1,21 @@
-// let players = [];
 
 //Code to send data from JavaScript to node.js
 const postData = data => {
   const body = JSON.stringify(data);
   return fetch('/play', {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, cors, *same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
       },
-      redirect: 'follow', // manual, *follow, error
-      referrer: 'no-referrer', // no-referrer, *client
+      redirect: 'follow',
+      referrer: 'no-referrer',
       body
     })
-    .then(response => response.json()) // parses JSON response into native JavaScript objects
+    .then(response => response.json())
 }
-
-// for (var i = 0; i < 22; i++) {
-//   players.push($(".card > button").eq(i).attr("value"));
-// }
-
-
 
 let selectedPlayers = [];
 let remainingPlayers = 11;
@@ -91,7 +84,6 @@ $(".card > button").click(function(e) {
     alert("You can't select more players");
   }
 
-  // $(".evaluate-button").click(function(e){
     if(selectedPlayers.length == 11){
       console.log(selectedPlayers);
       //Code to send data from JavaScript to node.js
@@ -103,6 +95,5 @@ $(".card > button").click(function(e) {
         })
         .catch(e => console.log(e));
     }
-  // });
 
 });
