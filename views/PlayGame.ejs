@@ -1,0 +1,345 @@
+<%- include("header") -%>
+
+<div class="instructions">
+  <h1><i class="fas fa-info-circle"></i> Instructions</h1>
+  <ul>
+    <li>Select any of the upcoming Dream11 Super Smash matches and click on the "Create Team" button.</li>
+    <li>Use your cricket knowledge or simply pick your favourite players to create your team. With 1000 credits, select a total of 11 players, which must include a combination of wicketkeeper(s), batters, bowlers and allrounders. Keep an eye on which players are involved in the match.
+    </li>
+    <li>If your team scores the most points for the match. You earn more points and will get chance to lead in the leaderboard.</li>
+  </ul>
+  <hr>
+</div>
+
+<div class="players">
+  <h1><i class="fas fa-gamepad"></i> Create Team</h1>
+  <div class="player-selection-status">
+    <div class="player-status-p">
+      <h6>Players remaining: </h6>
+      <p id="pl-remain">11</p>
+    </div>
+
+    <div class="player-status-p">
+      <h6>Points remaining: </h6>
+      <p id="pts-remain">1000</p>
+    </div>
+
+    <div class="player-status-p">
+      <h6>Batsmen: </h6>
+      <p id="bat">0</p>
+    </div>
+
+    <div class="player-status-p">
+      <h6>Bowlers: </h6>
+      <p id="ball">0</p>
+    </div>
+
+    <div class="player-status-p">
+      <h6>All-Rounders: </h6>
+      <p id="ar">0</p>
+    </div>
+
+    <div class="player-status-p">
+      <h6>Wicket-keeper: </h6>
+      <p id="wk">0</p>
+    </div>
+  </div>
+
+  <div class="player-cards">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/virat kholi.png" class="card-img-top" alt="Virat Kohli">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Virat Kohli" value1="103.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Virat Kohli</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">103.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/aaron finch.png" class="card-img-top" alt="Aaron Finch">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Aaron Finch" value1="105.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Aaron Finch</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">105.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/abd.png" class="card-img-top" alt="Ab De-Villiers">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Ab De-Villiers" value1="190.5" id="wicketkeeper">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Ab De-Villiers</li>
+              <li class="list-group-item"><img src="images/category/wicket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">190.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/chahal.png" class="card-img-top" alt="Yuzvender Chahal">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Yuzvender Chahal" value1="194" id="bowler">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Yuzvender Chahal</li>
+              <li class="list-group-item"><img src="images/category/tennis-ball.png" alt="cricket-bat"></li>
+              <li class="list-group-item">194</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/chris morris.png" class="card-img-top" alt="Chris Morris">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Chris Morris" value1="162.5" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Chris Morris</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">162.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/devdutt padikkal.png" class="card-img-top" alt="Devdutt Padikkal">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Devdutt Padikkal" value1="175.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Devdutt Padikkal</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">175.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/gurkeerat mann singh.png" class="card-img-top" alt="Gurkeerat Singh">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Gurkeerat Singh" value1="32.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Gurkeerat Singh</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">32.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/mooen ali.png" class="card-img-top" alt="Moeen Ali">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Moeen Ali" value1="16.5" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Moeen Ali</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">16.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/saini.png" class="card-img-top" alt="Saini">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Saini" value1="149.5" id="bowler">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Saini</li>
+              <li class="list-group-item"><img src="images/category/tennis-ball.png" alt="cricket-bat"></li>
+              <li class="list-group-item">149.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/shivam dube.png" class="card-img-top" alt="Shivam Dube">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Shivam Dube" value1="77" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Shivam Dube</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">77</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/rcb/sundar.png" class="card-img-top" alt="Sundar">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Sundar" value1="174" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Sundar</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">174</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/dhoni.png" class="card-img-top" alt="Dhoni">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Dhoni" value1="104.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Dhoni</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">104.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/ambati rayudu.png" class="card-img-top" alt="Ambati Rayudu">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Ambati Rayudu" value1="124.5" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Ambati Rayudu</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">124.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/chahar.png" class="card-img-top" alt="Chahar">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Chahar" value1="167.5" id="bowler">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Chahar</li>
+              <li class="list-group-item"><img src="images/category/tennis-ball.png" alt="cricket-bat"></li>
+              <li class="list-group-item">167.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/dwayne bravo.png" class="card-img-top" alt="Dwayne Bravo">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Dwayne Bravo" value1="58.5" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Dwayne Bravo</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">58.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/faf du plessis.png" class="card-img-top" alt="Du Plessis">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Du Plessis" value1="184" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Du Plessis</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">184</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/inran tahir.png" class="card-img-top" alt="Imaran Tahir">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Imaran Tahir" value1="27.5" id="bowler">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Imaran Tahir</li>
+              <li class="list-group-item"><img src="images/category/tennis-ball.png" alt="cricket-bat"></li>
+              <li class="list-group-item">27.5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/jadeja.png" class="card-img-top" alt="Jadeja">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Jadeja" value1="183" id="allrounder">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Jadeja</li>
+              <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">183</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/murali vijay.png" class="card-img-top" alt="Murali Vijay">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Murali Vijay" value1="10" id="batsmen">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Murali Vijay</li>
+              <li class="list-group-item"><img src="images/category/cricket-bat.png" alt="cricket-bat"></li>
+              <li class="list-group-item">10</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/narayan jagdeesan.png" class="card-img-top" alt="Narayan Jagdeeshan">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Narayan Jagdeeshan" value1="10" id="wicketkeeper">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Narayan Jagdeeshan</li>
+              <li class="list-group-item"><img src="images/category/wicket.png" alt="cricket-bat"></li>
+              <li class="list-group-item">10</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="last-player-card">
+              <div class="card" style="width: 15rem;">
+                <img src="images/csk/shane watson.png" class="card-img-top" alt="Shane Watson">
+                <button class="btn btn-success button-select-players" type="button" name="button" value="Shane Watson" value1="133" id="allrounder">+</button>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Shane Watson</li>
+                  <li class="list-group-item"><img src="images/category/cricket.png" alt="cricket-bat"></li>
+                  <li class="list-group-item">133</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card" style="width: 15rem;">
+            <img src="images/csk/shardul thakur.png" class="card-img-top" alt="Shardul Thakur">
+            <button class="btn btn-success button-select-players" type="button" name="button" value="Shardul Thakur" value1="108" id="bowler">+</button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Shardul Thakur</li>
+              <li class="list-group-item"><img src="images/category/tennis-ball.png" alt="cricket-bat"></li>
+              <li class="list-group-item">108</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="" action="/play" method="post">
+    <div class="input-group flex-nowrap">
+      <input type="text" class="form-control input1" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="userName" required>
+    </div>
+    <div class="input-group flex-nowrap">
+      <input type="text" class="form-control input2" placeholder="Team name" aria-label="Username" aria-describedby="addon-wrapping" name="teamName" required>
+    </div>
+
+    <button class="btn btn-lg btn-success evaluate-button" type="submit" name="button">Create Team</a>
+  </form>
+
+  </div>
+  <a type="button" class="slide-up btn btn-success" href="#header" style="position: relative; top: 30px; left: 1400px; font-weight: bold; font-size: 25px; border-radius: 50%; width: 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">↑</a>
+
+<%- include("footer") -%>

@@ -1,0 +1,318 @@
+
+body{
+  /* background-color: #393E46; */
+  background-color: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  box-shadow: 0 5px 5px -2px rgba(0,0,0,0.25);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+hr {
+  height: 1px;
+  margin: 80px 0;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  border: 0;
+}
+
+hr:after {
+  display: block;
+  content: '';
+  height: 30px;
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar-brand:hover{
+  opacity: 0.9;
+}
+
+.header{
+  padding-top: 30px;
+}
+
+.header h1{
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.home-para{
+  padding-left: 70px;
+  padding-top: 30px;
+  width: 70%;
+  float: left;
+  line-height: 2rem;
+}
+
+.batsman-img{
+  margin-left: 70px;
+  border-radius: 50%;
+}
+
+.content{
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.content h1{
+  padding-top: 30px;
+  padding-left: 900px;
+}
+
+.content ul{
+  line-height: 2rem;
+  display: inline;
+  position: relative;
+  right: 150px;
+}
+
+.content img{
+  float: left;
+  padding-left: 70px;
+  width: 70%;
+}
+
+.content a{
+  margin-top: 30px;
+}
+
+.teams h1{
+  text-align: center;
+}
+
+.teams{
+  color: white;
+  background-color: #393E46;
+  margin-top: 150px;
+}
+
+.teams-table{
+  padding-left: 90px;
+}
+
+.teams-img{
+  width: 100px;
+  height: 100px;
+  margin: 30px 0 30px 0;
+  border-radius: 20%;
+}
+
+.teams-img:hover{
+  /* border: 4px solid; */
+  opacity: 0.6;
+}
+
+.team-RR-MI{
+  padding-left: 580px;
+}
+
+.team-RR-MI img{
+  margin: 40px;
+  margin-top: 7px;
+}
+
+.teams h1{
+  text-align: center;
+}
+
+.teams table{
+  width: 40%;
+  margin: 0 auto 0 auto;
+}
+
+.footer{
+  background-color: #393E46;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.footer-button-div{
+  padding-left: 590px;
+}
+
+.footer h3{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer button{
+  margin: 15px 5px;
+}
+
+.footer h4{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.social{
+  padding-top: 0px;
+}
+
+.follow-us-icons{
+  padding-left: 715px;
+}
+
+.follow-us-icons i{
+  color: white;
+  margin: 4px;
+}
+
+.follow-us-icons i:hover{
+  opacity: 0.6;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+  padding-top: 30px;
+}
+
+/* index.ejs styles ends here */
+
+
+/* PlayGame.ejs styles from here */
+
+.instructions{
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.instructions ul{
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 70%;
+}
+
+.players{
+  padding-left: 70px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.player-selection-status{
+  background-color: #393E46;
+  margin-top: 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 122px;
+  z-index: 100;
+  width: 92%;
+  box-shadow: 0 1px 1px grey;
+}
+
+.player-selection-status h6{
+  display: inline-block;
+  margin: 4px;
+}
+
+.player-selection-status p{
+  display: inline-block;
+  margin: 2.5px;
+}
+
+.player-status-p{
+  padding: 15px;
+  display: inline-block;
+  margin: 5.5px;
+}
+
+.player-cards{
+  padding: 30px 40px 40px 40px;
+}
+
+.player-status-btn{
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.card{
+  margin: 30px 0 30px 0;
+  /* box-shadow: 2px 2px 2px .5px grey; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.card-img-top{
+  background-image: linear-gradient(145deg, black, white);
+}
+
+.card-img-top:hover{
+  opacity: 0.8;
+}
+
+.list-group-item{
+  text-align: center;
+}
+
+.last-player-card{
+  position: relative;
+  left: 340px;
+}
+
+.input-group{
+  width: 30%;
+  position: relative;
+  left: 490px;
+}
+
+.input1{
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.input2{
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+.evaluate-button{
+  position: relative;
+  left: 600px;
+  top: 30px;
+}
+
+.button-select-players{
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 235px;
+  top: 275px;
+  z-index: 1;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+/* PlayGame.ejs styles ends here */
+
+/* evaluateScore.ejs styles from here */
+
+.evaluateScore-h1{
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.evaluateScore-box p{
+  display: inline-block;
+  margin: 10px;
+}
+
+.evaluateScore-table{
+  /* padding: 0 200px 0 200px; */
+  width: 60%;
+  margin: auto;
+  padding: 50px 0 50px 0;
+}

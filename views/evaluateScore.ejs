@@ -1,0 +1,25 @@
+<%- include("header") -%>
+<h1 class="evaluateScore-h1">Leader Board</h1>
+<div class="evaluateScore-table">
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team</th>
+        <th scope="col">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let j = 0; %>
+      <% for(var i=1; i <= results.length; i += 12){ %>
+      <tr>
+        <th scope="row"><%= j+1 %></th>
+        <td><%= results[i].TEAM_NAME %></td>
+        <td><%= results[i].SCORE %></td>
+      </tr>
+      <% j += 1; %>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+<%- include("footer") -%>
