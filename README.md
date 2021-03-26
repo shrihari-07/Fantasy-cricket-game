@@ -3,7 +3,7 @@ An online game similar to Dream11. Users need to select 11 players from 2 real t
 The front-end of the website is being developed using HTML, CSS, Bootstrap, JavaScript,jQuery, ejs and the back-end is developed using node.js, MySql.
 ## Rules to play
 ### Batting
-● 1 point for 2 runs scored
+● 1 point for 2 runs scored.\n
 ● Additional 5 points for half century
 ● Additional 10 points for century
 ● 2 points for strike rate (runs/balls faced) of 80-100
